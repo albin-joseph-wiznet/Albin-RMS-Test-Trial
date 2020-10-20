@@ -1,13 +1,16 @@
 import React from 'react';
-import { Text, TextInput,StyleSheet, View, Button,Image, TouchableOpacity } from 'react-native';
+import { Text, TextInput,StyleSheet, ScrollView, View, Button,Image, TouchableOpacity } from 'react-native';
+//import { ScrollView } from 'react-native-gesture-handler';
 
 
-const PrivacyScreen = ({ navigation }) => {
+const PrivacyScreen = () => {
   return (
+    <ScrollView> 
     <View style={{ backgroundColor: "white", fontSize: 20,paddingLeft:16}}>
-       <Text  style={{ fontSize: 20,  fontWeight: 400, fontFamily:' Roboto', color: 'black',textAlign: 'left'}}>Terms and Condition
+    <Text  style={{ fontSize: 20,  fontWeight: '400', fontFamily:'Roboto', color: 'black',textAlign: 'left'}}>
+    <Text style={{fontWeight: "bold"}}>Privacy Policy</Text>{'\n'} {'\n'}   
 
-PURPOSE:
+    <Text style={{fontWeight: "bold"}}>Purpose:</Text>{'\n'} 
 
 Duruper.com is intended only to serve as a preliminary medium of contact and exchange of information for its users / members / visitors who have a bona fide intention to contact and/or be contacted for the purposes related to genuine existing job vacancies and for other career enhancement services.
 
@@ -123,6 +126,7 @@ History
             </View>
     </View>
     </View>
+    </ScrollView>
   );
 };
 

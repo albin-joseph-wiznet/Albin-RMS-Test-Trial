@@ -1,13 +1,15 @@
 import React from 'react';
-import { Text, TextInput,StyleSheet, View, Button,Image, TouchableOpacity } from 'react-native';
+import { Text, TextInput, ScrollView, StyleSheet, View, Button,Image, TouchableOpacity } from 'react-native';
 import { Paragraph } from 'react-native-paper';
-import { StatusBar } from "expo-status-bar";
-const TermsScreen = ({ navigation }) => {
+//import { StatusBar } from "expo-status-bar";
+const TermsScreen = () => {
   return (
-    <View style={{ backgroundColor: "white", fontSize: 20,paddingLeft:16}}>
-       <Text  style={{ fontSize: 20,  fontWeight: 400, fontFamily:' Roboto', color: 'black',textAlign: 'left'}}>Terms and Condition 
+    <ScrollView>  
+    <View style={{ backgroundColor: "white", fontSize: 20, paddingLeft:16}}>
+       <Text  style={{ fontSize: 20,  fontWeight: '400', fontFamily:'Roboto', color: 'black',textAlign: 'left'}}>
+       <Text style={{fontWeight: "bold"}}>Terms and Condition</Text>{'\n'} {'\n'}  
        <Paragraph>
-PURPOSE:
+    <Text style={{fontWeight: "bold"}}>Purpose:</Text>{'\n'} 
 
 Duruper.com is intended only to serve as a preliminary medium of contact and exchange of information for its users / members / visitors who have a bona fide intention to contact and/or be contacted for the purposes related to genuine existing job vacancies and for other career enhancement services.
 
@@ -32,75 +34,15 @@ The User is solely responsible for maintaining confidentiality of the User passw
 The User/Subscriber/Visitor to Duruper.com and/or its affiliated websites does hereby specifically agree that he/she shall, at all times, comply with the requirements of the Information Technology Act, 2000 as also rules, regulations, guidelines, bye laws and notifications made thereunder, while assessing or feeding any resume/ insertion or information/data into the computers, computer systems or computer network of Duru Cooperation Private Limited. The said User/ subscriber/ visitor to Duruper.com and/or its affiliated websites does further unequivocally declare that in case he violates any provisions of the Information Technology Act, 2000 and/or rules, regulations, guidelines, byelaws and notifications made thereunder, he shall alone be responsible for all his acts, deeds and things and that he alone shall be liable for civil and criminal liability there under or under any other law for the time being in force.
 
 The User is solely responsible for obtaining, at his own cost, all licenses, permits, consents, approvals and intellectual property or other rights as may be required by the user for using the Service.
-
+{'\n'}
 </Paragraph>
-
 </Text>
-       <View style={styles.container}>
-     
-
-      
-      {/*
-      <TouchableOpacity onPress={()=> alert('image clicked)} >
  
- <Image  source={require('../../assets/Enabled.jpg')} style = {styles.ImageClass} />
- 
-</TouchableOpacity>
-  */}
-    
-           
-      
-             
-     
     </View>
-    <StatusBar style="auto" />
-    </View>
+    </ScrollView>  
   );
 };
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        padding: 16,
-        backgroundColor: "#fff",
-        alignItems: "center",
-        justifyContent: "center",
-      },
-  text: {
-    fontSize:15,
-    marginVertical: 10
-  },
-  SignUptext: {
-    fontSize:15,
-   
-  },
-  SignUpHyperlink: {
-    color: '#0D47A1',
-    textDecorationLine: 'underline',
-    
-  },
-  hyperlinkStyle: {
-    color: '#0D47A1',
-    textDecorationLine: 'underline',
-    paddingLeft: 130,
-    textAlign: 'right'
-  },
-  linkIn:{width:248,
-    height:32},
-  googleIn:{width:248,
-      height:32,
-    marginTop:8,},
-  Line1:{
-    width: 112,
-height: 2,
-alignItems: 'flex-start'},
-or:{width:16,
-  height:16},
-  Line2:{
-    width: 112,
-height: 2,
-alignItems: 'flex-end'},
-  space: 555
-});
+
 
 export default TermsScreen;

@@ -9,9 +9,17 @@ import ImageScreen from './screens/ImageScreen';
 // import SquareScreen from './src/screens/SquareScreen';
 // import TextScreen from './src/screens/TextScreen';
 // import BoxScreen from './src/screens/BoxScreen';
+
+//import LandingScreen from './screens/LandingScreen';
+//import NotificationsScreen from "./screens/NotificationsScreen";
+//import MyJobsScreen from "./screens/MyJobsScreen";
+//import MyProfileScreen from './screens/MyProfileScreen';
+//import DuruLogoScreen from './src/screens/DuruScreen';
 import SignInScreen from './screens/SignInScreen';
 import SignUpScreen from './screens/SignUpScreen';
-
+import ForgotPassScreen from './screens/ForgotPassScreen';
+import TermsScreen from './screens/TermsScreen';
+import PrivacyScreen from './screens/PrivacyScreen';
 
 navigator = createStackNavigator(
     {
@@ -19,13 +27,16 @@ navigator = createStackNavigator(
       Components: ComponentsScreen,
       List: ListScreen,
       Image: ImageScreen,
+      //Landing: LandingScreen,
       SignIn: SignInScreen,
-      SignUp:SignUpScreen,
-      // Counter: CounterScreen,
-      // Color: ColorScreen,
-      // Square: SquareScreen,
-      // Text: TextScreen,
-      // Box: BoxScreen,
+      Home: HomeScreen,
+      //NotifyScreen: NotificationsScreen,
+      //MyJobs: MyJobsScreen,
+      //MyProfile: MyProfileScreen,
+      ForgotPass: ForgotPassScreen,
+      SignUp: SignUpScreen,
+      TermsService: TermsScreen,
+      PrivacyPolicy: PrivacyScreen,
     },
     {
       initialRouteName: "Home",
