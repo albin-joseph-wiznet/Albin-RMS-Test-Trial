@@ -59,7 +59,7 @@ export default class App extends Component {
             alignfifth: true,
           });
         }),
-      11000
+      7000
     );
   }
 

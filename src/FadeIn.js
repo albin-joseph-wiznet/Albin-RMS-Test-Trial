@@ -30,26 +30,5 @@ class ImageLoader extends Component {
   }
 }
 
-// const App = () => (
-//   <View style={styles.container}>
-//     <ImageLoader
-//       style={styles.image}
-//       source={{ uri: 'https://images.unsplash.com/photo-1485832329521-e944d75fa65e?auto=format&fit=crop&w=1000&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D' }}
-//     />
-//   </View>
-// );
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   },
-//   image: {
-//     width: 300,
-//     height: 300,
-//     borderRadius: 10,
-//   },
-// });
 
 export default ImageLoader;

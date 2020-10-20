@@ -9,6 +9,7 @@ import ImageScreen from './screens/ImageScreen';
 // import SquareScreen from './src/screens/SquareScreen';
 // import TextScreen from './src/screens/TextScreen';
 // import BoxScreen from './src/screens/BoxScreen';
+import SignInScreen from './screens/SignInScreen';
 import SignUpScreen from './screens/SignUpScreen';
 
 
@@ -18,6 +19,7 @@ navigator = createStackNavigator(
       Components: ComponentsScreen,
       List: ListScreen,
       Image: ImageScreen,
+      SignIn: SignInScreen,
       SignUp:SignUpScreen,
       // Counter: CounterScreen,
       // Color: ColorScreen,
