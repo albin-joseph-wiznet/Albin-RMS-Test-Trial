@@ -2,6 +2,7 @@ import React from 'react';
 import { Text, StyleSheet, View, Button, Image, TouchableOpacity } from 'react-native';
 //import { StatusBar } from "expo-status-bar";
 
+
 const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
@@ -14,8 +15,6 @@ const HomeScreen = ({ navigation }) => {
    
    <View style={{flexDirection: 'row'}}>
   
-         
-
        <TouchableOpacity onPress={() => navigation.navigate('SignIn')} >
    <View style = {styles.AppliedCard}>
 <Text style = {styles.AppliedText}>Sign In </Text>
@@ -60,6 +59,7 @@ const HomeScreen = ({ navigation }) => {
    />
     {/* <StatusBar style="auto" /> */}
  </View>
+ 
   );
 };
 

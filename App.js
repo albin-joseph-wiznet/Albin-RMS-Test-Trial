@@ -9,7 +9,7 @@ import AnimatedImage from './src/ImageRotator';
 import ImageLoader from './src/FadeIn'
 import Routes from './src/Routes.js';
 
-
+import BottomTabs from './src/screens/BottomTabs';
 
 export default class App extends Component {
   constructor() {
@@ -127,7 +127,7 @@ export default class App extends Component {
 
 {!this.state.alignfifth ? null : (
        
-      <Routes/>    
+      <Routes/>  
       
         )}
       </View>
